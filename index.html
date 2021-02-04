@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amerikosi.com - Доставка авто из Америки, рассчет доставки и таможеных платежей</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="#" class="header_logo"><img src="/img/logo_425.png" alt="Amerikosi"></a>
+            <button class="menu_button"></button>
+            <nav class="menu_items_container">
+                <ul class="menu_items">
+                    <li class="menu_item">главная</li>
+                    <li class="menu_item">калькулятор растаможки</li>
+                    <li class="menu_item">стоимость доставки</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section_shipping_fees">
+            <h1 class="section_shipping_fees_title">рассчет стоимости доставки</br> автомобиля из сша</h1>
+            <form class="form_shipping_fees">
+                <label for="lot_number">Введите номер лота:</label>
+                <input type="number" name="lot_number" id="lot_number" required disabled minlength="4" maxlength="8" size="10">
+                
+                <span class="shipping_or"></br>или</br></span>
+
+                <label for="auction_name">Название аукциона:</label>
+                <select name="auction_name" id="auction_name">
+                    <option selected value="Copart">Copart</option>
+                    <option value="IAAI">IAAI</option>
+                </select>
+
+                <label for="auction_name">Город размещения аукциона:</label>
+                <select name="auction_state" id="auction_state">
+                    <option value="79601">ABILENE, TX 79601</option>
+                    <option selected value="12205">ALBANY 12205</option>
+                    <option value="87105">ALBUQUERQUE 87105</option>
+                    <option value="15931">ALTOONA 15931</option>
+                </select>
+
+                <label for="city_of_delivery">Ваш город:</label>
+                <select name="city_of_delivery" id="city_of_delivery">
+                    <option value="Kyiv">Киев</option>
+                    <option selected value="Odesa">Одесса</option>
+                    <option value="Lviv">Львов</option>
+                    <option value="Dnepr">Днепр</option>
+                </select>
+
+                <button class="shipping_button">Рассчитать</button>
+            </form>
+        </section>
+        <section class="section_shipping_result">
+            <p class="shipping_result_text_delivery_usa">Доставка до порта&#160;<span class="shipping_result_text_delivery_usa_city">Savannah</span>:<span class="shipping_result_text_delivery_usa_amount">300</span></p>
+            <p class="shipping_result_text_delivery_ua">Доставка в порт г.<span class="shipping_result_text_delivery_ua_city">Одесса</span>:<span class="shipping_result_text_delivery_usa_amount">750</span></p>
+            <p class="shipping_result_text_delivery_owner">Экспедитор, брокер, </br>доставка в г.<span class="shipping_result_text_delivery_owner_city">Киев</span>:<span class="shipping_result_text_delivery_owner_amount">1000</span></p>
+            <p class="shipping_result_text_delivery_total">Итого:<span class="shipping_result_text_delivery_total_amount">2050</span></p>
+        </section>
+    </div> <!--end of wrapper -->
+</body>
+</html>
