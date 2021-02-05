@@ -30,6 +30,7 @@ h1 {
     width: 112px;
     height: 105px;
     margin: 6px 10px 0 0;
+    background-image: url("/img/logo_425.png");
 }
 
 .menu_button {
