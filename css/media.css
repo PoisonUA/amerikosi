@@ -218,6 +218,7 @@
     .header {
         height: 262px;
         background-image: url("../img/header_1024.jpg");
+        background-position: left;
         justify-content: space-between;
     }
     
